@@ -15,6 +15,7 @@ pipelines:
             script:
               - npm install
               - npx playwright install
+              - npx playwright install-deps
               - npm test
         - step:
             name: Code linting
