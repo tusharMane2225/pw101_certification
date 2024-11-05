@@ -8,5 +8,6 @@ pipelines:
         script:
           - npm install -g npm  # Ensure npm is up to date
           - npm install           # Install dependencies
+          - npx playwright install-deps
           - npx playwright install  # Install Playwright browsers
           - npm run test      # Run end-to-end tests
