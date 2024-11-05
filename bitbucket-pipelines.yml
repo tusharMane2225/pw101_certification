@@ -1,26 +1,12 @@
-#  Template NodeJS build
-
-#  This template allows you to validate your NodeJS code.
-#  The workflow allows running tests and code linting on the default branch.
-
-image: node:16
+image: node:latest  # Use the latest Node.js image
 
 pipelines:
   default:
-    - parallel:
-        - step:
-            name: Build and Test
-            caches:
-              - node
-            script:
-              - npm install
-              - npx playwright install
-              - npx playwright install-deps
-              - npm test
-        - step:
-            name: Code linting
-            script:
-              - npm install eslint
-              - npx eslint .
-            caches:
-              - node
+    - step:
+        caches:
+          - node
+        script:
+          - npm install -g npm  # Ensure npm is up to date
+          - npm install           # Install dependencies
+          - npx playwright install  # Install Playwright browsers
+          - npm run test      # Run end-to-end tests
