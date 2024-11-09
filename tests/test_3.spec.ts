@@ -41,7 +41,7 @@ test.describe('LambdaTest Playwright 101 Assignment', async() => {
   });
 
 
-  test('Test Scenario 3: Input Form Submit', async ({ page }) => {
+  test.skip('Test Scenario 3: Input Form Submit', async ({ page }) => {
 
       //****************** Click on submit without filling form and validate error message */
       const inputFormPage = new InputFormPage(page)

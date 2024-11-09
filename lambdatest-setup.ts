@@ -13,7 +13,7 @@ const capabilities = {
   browserVersion: "latest",
   "LT:Options": {
     platform: "Windows 10",
-    build: "Playwright TS Build",
+    build: "Playwright Build",
     name: "Playwright Test",
     user: 'tushar54mane',
     accessKey: 'EQFrwGyeViIegkLbgAybbRAjHtA4EyBVhbAIZzF7w4lqeW26uJ',
