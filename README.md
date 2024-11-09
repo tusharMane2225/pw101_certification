@@ -1,29 +1,11 @@
-# README #
+# Testing Playwright with TS on LambdaTest
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Setup
+* Clone the repo. Run `cd playwright-test-ts`
+* Install Playwright `npx playwright install`
+* Install Playwright Dep `npx playwright install-deps`
+* Install dependencies. Run `npm install`
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+## Running your tests
+- To run a single test, run 
+  ```npm run test```
